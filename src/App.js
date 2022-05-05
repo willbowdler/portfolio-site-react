@@ -13,6 +13,7 @@ import MyProjectsMini from "./components/MyProjectsMini"
 import AboutMePage from "./components/pages/AboutMePage"
 import GospelPage from "./components/pages/GospelPage"
 import MyProjectsPage from "./components/pages/MyProjectsPage"
+import ContactMePage from "./components/pages/ContactMePage"
 
 function App() {
   return (
@@ -42,6 +43,13 @@ function App() {
           path='/myprojects'
           element={
             <MyProjectsPage />
+          }>
+        </Route>
+        <Route 
+          exact
+          path='/contactme'
+          element={
+            <ContactMePage />
           }>
         </Route>
         <Route 
