@@ -1,4 +1,7 @@
+// Dependency Imports
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+
 // Regular Components
 
 import NavBar from "./components/universal/NavBar"
