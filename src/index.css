@@ -1,37 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto+Flex:opsz@8..144&display=swap");
 
+/* Universal Styles */
 :root {
-  --mainColor: #29335C;
-  --mainColorLight: #566cc3; 
-  --secondaryColor: #DB2839;
-  --textColor: #eee;
+  --mainColor: #fff;
+  --mainColorLight: #566cc3;
+  --secondaryColor: #7b8086;
+  --textColor: #000;
+
+  background-color: var(--mainColor);
 }
 
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+.italic {
+  font-style: italic;
+}
+
+.logo {
+  font-family: "Odibee Sans", cursive;
+}
+
+.subheader {
+  margin-left: 1rem;
+}
+
+.seperator {
+  margin: .5rem 0 0 1rem;
+  background-color: black;
+  height: 2.5px;
+  width: 70px;
+}
+
+.hp-section {
+  height: 100vh;
+}
+
+/* End of Universal Styles */
+
+/* Nav Styles */
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
-  padding: 0 2rem;
+  height: 12.75vh;
+  padding: 0 0 0 2.5rem;
   background: var(--mainColor);
   color: var(--textColor);
+}
+
+.header-sep {
+  background-color: black;
+  margin: 0 3rem;
+  height: 0.25vh;
 }
 
 nav .link {
   margin: 0 2rem;
   color: var(--textColor);
   text-decoration: none;
+
+  transition: color 0.75s ease;
 }
 
 nav .link:hover {
-  color: var(--secondaryColor)
+  color: var(--secondaryColor);
 }
 
 .nav-btn {
@@ -47,18 +87,24 @@ nav .link:hover {
   font-size: 1.2rem;
 }
 
+.nav-flex-btn {
+  display: none;
+}
+
 @media only screen and (max-width: 1024px) {
   .nav-btn {
     visibility: visible;
     opacity: 1;
   }
-  
+
+  header {
+    padding: 0 2rem;
+  }
+
   header nav {
-    /* This may not be necessary delete later */
     position: fixed;
     top: 0;
     left: 0;
-    /* end */
     height: 100%;
     width: 100%;
     display: flex;
@@ -81,7 +127,60 @@ nav .link:hover {
     right: 2rem;
   }
 
+  .nav-flex-btn {
+    display: block;
+  }
+
   .link {
     font-size: 1.5rem;
   }
 }
+
+/* End of Nav Styles */
+
+/* Hero Styles */
+
+.hero {
+  height: 87vh;
+}
+
+.hero-flex {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1rem;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-title,
+.hero-image {
+  width: 50%;
+}
+
+.hero-image {
+  margin: 1rem;
+  height: 10rem;
+  background-color: black;
+}
+
+.hero-btn {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  background-color: aqua;
+  border: none;
+  border-radius: 12px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: black;
+}
+
+/* End of Hero Styles */

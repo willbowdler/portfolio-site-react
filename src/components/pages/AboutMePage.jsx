@@ -1,7 +1,12 @@
+import GitHubSection from "../GitHubSection";
+
 function AboutMePage() {
   return (
-    <div>AboutMe</div>
-  )
+    <>
+      <div>AboutMe</div>
+      <GitHubSection />
+    </>
+  );
 }
 
-export default AboutMePage
+export default AboutMePage;
