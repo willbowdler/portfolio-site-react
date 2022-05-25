@@ -184,3 +184,11 @@ nav .link:hover {
 }
 
 /* End of Hero Styles */
+
+/* Accordian Styles */
+
+.acc-title {
+  display: flex;
+}
+
+/* End of Accordian Styles */

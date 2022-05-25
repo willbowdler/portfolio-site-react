@@ -13,7 +13,7 @@ import MyProjectsMini from "./components/MyProjectsMini"
 
 // Page Components
 
-import AboutMePage from "./components/pages/AboutMePage"
+import AboutMePage from "./components/pages/AboutMeComponents/AboutMePage"
 import GospelPage from "./components/pages/GospelPage"
 import MyProjectsPage from "./components/pages/MyProjectsPage"
 import ContactMePage from "./components/pages/ContactMePage"
